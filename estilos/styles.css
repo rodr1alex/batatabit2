@@ -1,0 +1,360 @@
+:root{
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D4;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --warm-black2: #282623;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #ffffff;
+    --sietecinto: #757575;
+    --narangito: #ff9536;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.header{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+.header__textos{
+    width: 100%;
+    height: 275px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.header__textos__titulo{
+    color: white;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+.header__textos__descripcion{
+    color: white;
+    font-size: 1.4rem;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+.header__boton{
+    width: 250px;
+    margin: 0 auto;
+}
+.header__boton button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+}
+.header__boton span{
+    margin-left: 10px;
+}
+
+
+.main{
+    width: 100%;
+    min-width: 320px;
+    background-color: var(--off-white);
+}
+.main__info{
+    padding-top: 80px;
+}
+.main__info__imagen{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.main__info__imagen img{
+    justify-self: center;
+}
+.main__info__texto h1{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+    margin-bottom: 30px;
+}
+.main__info__texto p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--sietecinto);
+    margin-bottom: 50px;
+}
+.main__info__tablas{
+    display: flex;
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.main__info__tablas__tabla1{
+    width: 250px;
+    height: 300px;
+    margin: 0 120px;
+    scroll-snap-align: center;
+
+}
+.main__info__tablas__tabla2{
+    width: 250px;
+    height: 300px;
+    margin: 0 120px;
+    scroll-snap-align: center;
+
+}
+.main__info__tablas__tabla2 h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--narangito);
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.main__info__tablas__tabla1 h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--narangito);
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.main__info__tablas__tabla1__regilla{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.main__info__tablas__tabla1__regilla__moneda{
+    font: inter;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #b5b0ac;
+    background-color: white;
+}
+.main__info__tablas__tabla1__regilla__valor{
+    font: inter;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+.main__info__tablas__tabla1__actual{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: var(--soft-orange);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 8px;
+    text-align: center;
+}
+.main__info__tablas__tabla1__actual p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--warm-black);
+}
+.main__caracteristicas{
+    background-color: black;
+}
+.main__caracteristicas h2{
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+}
+.main__caracteristicas__parrafo{
+    text-align: center;
+    color: #888;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.main__caracteristicas__afiches{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+    padding-bottom: 50px;
+}
+.main__caracteristicas__afiche{
+    height: 150px;
+    background-color: var(--warm-black2);
+    border-radius: 8px;
+    padding: 10px;
+}
+.main__caracteristicas__afiche h3{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.main__caracteristicas__afiche p{
+    color: #888;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.main__imagen{
+    width: 100%;
+    height: 80vh;
+    background-image: url("/assets/imgs/bitcoinbaby1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+.main__imagen h2{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.main__planes{
+    width: 100%;
+    padding: 10px;
+}
+.main__planes h2{
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--warm-black) ;
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+}
+.main__planes__parrafo{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #757575;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: 40px;
+}
+.main__planes__afiches{
+    display: flex;
+    height: 350px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.main__planes__afiches__1{
+    margin: 0 110px;
+    width: 200px;
+    height: 280px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+    border-radius: 8px;
+    margin-top: 50px;
+    scroll-snap-align: center;
+}
+.main__planes__afiches__1__flotante{
+    width: 150px;
+    height: 30px;
+    background-color: var(--narangito);
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+    top: -15px;
+    padding: 8px;
+}
+.main__planes__afiches__1__flotante p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+.main__planes__afiches__1__pago{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.main__planes__afiches__1__precio{
+    text-align: center;
+    font-size: 5.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.main__planes__afiches__1__conveniencia{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #757575;
+    margin-bottom: 20px;
+}
+.main__planes__afiches__1__escoge{
+    width: 180px;
+    height: 40px;
+    border: 2px solid var(--bitcoin-orange);
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+.main__planes__afiches__1__escoge p{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.main__planes__afiches__1__escoge img{
+}
+
+.footer{
+    background-color: var(--bitcoin-orange);
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.footer__side1{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__side1 a{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.8rem;
+    margin-bottom: 8px;
+}
+.footer__side2{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+}
